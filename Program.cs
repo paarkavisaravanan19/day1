@@ -23,6 +23,7 @@ namespace application1
             /*
             application1.assignment1 obj2= new application1.assignment1();
             obj2.func1();*/
+
             //assignment2
             /*application1.assignment2 obj3= new application1.assignment2();
             obj3.asc();*/
