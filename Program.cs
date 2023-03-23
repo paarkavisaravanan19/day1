@@ -7,10 +7,31 @@ namespace application1
 {
     internal class Program
     {
-         void Main(string[] args)
+        static void Main(string[] args)
         {
             /*
-            //for loop and initializatio
+            //struct and class 
+            application1.struct_and_class obj = new struct_and_class();
+            obj.triangle();
+            */
+            //enumeration
+            /*
+            application1.enumeration obj1= new application1.enumeration();
+            obj1.day_count();
+            */
+            //assignment1
+            /*
+            application1.assignment1 obj2= new application1.assignment1();
+            obj2.func1();*/
+            //assignment2
+            /*application1.assignment2 obj3= new application1.assignment2();
+            obj3.asc();*/
+            //assignment 3
+            application1.assignment3 obj4= new application1.assignment3();
+            obj4.even_odd();
+
+            /*
+            //for loop and initialization
             Console.WriteLine("Hello Everyone");
             int a = 10;
             int b = (int)20.2;
@@ -257,6 +278,7 @@ namespace application1
                 Console.WriteLine(i);
             }
         }*/
-        }
+
     }
 
+}

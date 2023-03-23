@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace application1
 {
-    internal class Hero_villian
+    /*internal class Hero_villian
     {
-        static void Main(string[] args)
+      static void Main(string[] args)
         {
 
-            Console.WriteLine("hero = 1");
+            /*Console.WriteLine("hero = 1");
             Console.WriteLine("villian = 2");
 
             int count = 100; // villian bullets
             int count2 = 150; //hero bullets
             Console.WriteLine("Initial bullets with hero: " + count2);
             Console.WriteLine("Intial Bullets with villian " + count);
-            string opt = " ";
+            string opt = "";
 
             do
             {
@@ -37,9 +37,10 @@ namespace application1
                     default:
                         Console.WriteLine("inside default");
                         break;
+               
                 }
                 Console.WriteLine("do you want to continue? Press yes or no");
-                opt = Console.ReadLine();
+                //opt = Console.ReadLine();
 
             } while (string.Equals(opt, "yes"));
             if (string.Equals("no", opt))
@@ -54,7 +55,8 @@ namespace application1
             {
                 Console.WriteLine("hero won");
             }
+            
 
         }
-    }
+    }*/
 }
