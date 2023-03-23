@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace application1
 {
+
     internal class stack_queue
     {
         public void calling()
