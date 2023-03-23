@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel;
 using System.Diagnostics.CodeAnalysis;
+using System.Linq.Expressions;
 using System.Reflection.Emit;
 
 namespace application1
@@ -8,6 +9,59 @@ namespace application1
     {
         static void Main(string[] args)
         {
+
+            Console.WriteLine("hero = 1");
+            Console.WriteLine("villian = 2");
+            
+            int count = 100; // villian bullets
+            int count2 = 150; //hero bullets
+            Console.WriteLine("Initial bullets with hero: "+ count2);
+            Console.WriteLine("Intial Bullets with villian "+count);
+            string opt = " ";
+            
+            do
+            {
+                Console.WriteLine("press 1 or 2");
+                int num = Convert.ToInt32(Console.ReadLine());
+                switch (num)
+                {
+                    case 1:
+                        count2 = count2 - 1;
+                        Console.WriteLine("bullets with hero : "+count2);
+                        break;
+                    case 2:
+                        count = count - 3;
+                        Console.WriteLine("bullets with villian : "+count);
+                        break;
+                    default:
+                        Console.WriteLine("inside default");
+                        break;
+                }
+                Console.WriteLine("do you want to continue? Press yes or no");
+                opt = Console.ReadLine();
+
+            } while (string.Equals(opt, "yes"));
+            if(string.Equals("no",opt))
+            {
+                Console.WriteLine("Thanks for playing !");
+            }
+            if(count> count2)
+            {
+                Console.WriteLine("villian won");
+            }
+            if(count< count2)
+            {
+                Console.WriteLine("hero won");
+            }
+
+
+
+
+
+
+
+
+
             /*
             //for loop and initializatio
             Console.WriteLine("Hello Everyone");
@@ -165,7 +219,7 @@ namespace application1
             string res = $"your mark is {number}!";
             Console.WriteLine(res);
             */
-            
+
             //multidimensional array 
             /*int[,] numbers = { { 1, 4, 2 }, { 3, 6, 8 }, { 7,9,0} };
             foreach (int i in numbers)
@@ -182,7 +236,7 @@ namespace application1
                     Console.WriteLine(number[i, j]);
                 }
             }*/
-            
+
             /*
             //function 
             Console.WriteLine("Please enter your name: ");
@@ -221,7 +275,7 @@ namespace application1
             }
             */
             //JAGGED ARRAYS
-            int[][] a4 = new int[2][];
+            /*int[][] a4 = new int[2][];
             a4[0] = new int[] { 1, 2 };
             a4[1]= new int[] { 3, 4 };
             for (int i=0;i<a4.Length;i++)
@@ -230,7 +284,8 @@ namespace application1
                 {
                     Console.WriteLine(a4[i][j] );
                 }
-            }
+            }*/
+
 
 
         }
@@ -248,13 +303,13 @@ namespace application1
             Console.WriteLine(name);
         
         }*/
-        public static void PrintArray(int[] a1)
+        /*public static void PrintArray(int[] a1)
         {
            foreach (int i in a1)
             {
                 Console.WriteLine(i);
             }
-        }
+        }*/
         }
     }
 
