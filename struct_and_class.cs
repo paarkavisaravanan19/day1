@@ -12,6 +12,7 @@ namespace application1
         public void triangle()
         {
             demo de= new demo();
+
             Console.WriteLine("enter the side1: ");
             de.side1 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("enter the side2 : ");
