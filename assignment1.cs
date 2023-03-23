@@ -30,6 +30,7 @@ namespace application1
                             dict[value] = 1;
                     }
                     foreach (var pair in dict)
+
                         if (pair.Value > 1)
                         {
                             Console.WriteLine("Value {0} occurred {1} times", pair.Key, pair.Value);
