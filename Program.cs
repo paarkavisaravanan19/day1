@@ -27,9 +27,15 @@ namespace application1
             /*application1.assignment2 obj3= new application1.assignment2();
             obj3.asc();*/
             //assignment 3
-            application1.assignment3 obj4= new application1.assignment3();
+            /*application1.assignment3 obj4= new application1.assignment3();
             obj4.even_odd();
-
+            */
+            //stack and queue
+           /* application1.stack_queue obj5= new application1.stack_queue();
+            obj5.calling();*/
+            //generic 
+            application1.generic obj6= new application1.generic();
+            obj6.call();
             /*
             //for loop and initialization
             Console.WriteLine("Hello Everyone");
