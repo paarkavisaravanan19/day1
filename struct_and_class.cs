@@ -22,6 +22,7 @@ namespace application1
             int perimeter = de.side1+de.side2+ de.side3;
             Console.WriteLine("perimeter of triangle: "+perimeter);
         }
+
         public struct demo
         {
             public int side1;
