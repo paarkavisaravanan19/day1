@@ -123,9 +123,9 @@ namespace application1
             Console.WriteLine(exp);*/
 
             //arrays
-            string[] names = {"Paarkavi", "Kovarthan", "Dwaraka"};
+            //string[] names = {"Paarkavi", "Kovarthan", "Dwaraka"};
             //Console.WriteLine(names[0]);
-            Console.WriteLine("length of the string: "+names.Length);
+            /*Console.WriteLine("length of the string: "+names.Length);
             foreach (string name in names)
             {
                 Console.WriteLine(name);
@@ -135,13 +135,14 @@ namespace application1
             string[] arr1 = new string[9]; // if the size is known prior
             string[] arr2= new string[3] {"dog","cat","bird"}; //==> 0, 1, 2
             string[] arr3 = { "", "", "" };
-            int[] num1 = new int[5];
-            /* foreach(int i in num1) {
+            int[] num1 = new int[5];*/
+
+            /* foreach(int i in num1) { 
                  num1[i] = Convert.ToInt32(Console.ReadLine());
              }
              foreach(int i in num1)
              {
-                 Console.WriteLine(num1[i]);
+                 Console.WriteLine(i);
              }*/
 
             /*
@@ -164,9 +165,9 @@ namespace application1
             string res = $"your mark is {number}!";
             Console.WriteLine(res);
             */
-            /*
+            
             //multidimensional array 
-            int[,] numbers = { { 1, 4, 2 }, { 3, 6, 8 }, { 7,9,0} };
+            /*int[,] numbers = { { 1, 4, 2 }, { 3, 6, 8 }, { 7,9,0} };
             foreach (int i in numbers)
             {
                 Console.WriteLine(i);
@@ -180,8 +181,10 @@ namespace application1
                 {
                     Console.WriteLine(number[i, j]);
                 }
-            }
-            */
+            }*/
+            
+            /*
+            //function 
             Console.WriteLine("Please enter your name: ");
             string your_name=Console.ReadLine();
             Console.WriteLine("Please enter your roll number: ");
@@ -189,6 +192,46 @@ namespace application1
 
             namingfunc(your_name, roll_no);
             //method overloading ==> multiple methods can  have same name with diferent parameters
+            */
+            /*
+            //1D ARRAY
+            int[] a1 = { 1, 2, 3 };
+            PrintArray(a1);
+            //2D ARRAY
+
+            int[,] a3 = new int[3, 3];
+            a3[0, 1] = 2;
+            int[, ,] a2 = { { { 15, 16, 17 }, { 1, 2, 3 }, { 9, 10, 30 } }, 
+                { { 20, 30, 40 }, { 34, 87, 90 }, { 34, 12, 45 } }, 
+                { { 45, 56, 78 }, { 87, 90, 43 }, { 8, 2, 1 } } };
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    for(int k=0;k<3;k++)
+                    {
+
+                        Console.Write( " index of i : "+i+" index f j: "+j+" index of k: "+k+ " "+a2[i, j, k] + " ");
+                        
+                    }
+                    Console.WriteLine();
+                    
+                }
+                Console.WriteLine();
+            }
+            */
+            //JAGGED ARRAYS
+            int[][] a4 = new int[2][];
+            a4[0] = new int[] { 1, 2 };
+            a4[1]= new int[] { 3, 4 };
+            for (int i=0;i<a4.Length;i++)
+            {
+                for(int j=0;j<a4.Length;j++)
+                {
+                    Console.WriteLine(a4[i][j] );
+                }
+            }
+
 
         }
 
@@ -197,12 +240,20 @@ namespace application1
             a1 = 20;
             Console.WriteLine("inside the function : "+a1);  
         }*/
-        static void namingfunc(string your_name, int roll_no)
+        /*static void namingfunc(string your_name, int roll_no)
         {
             string name= $"Warm Welcome '{your_name}' , " +
                          $"have a wonderful wednesday! " +
                          $"your rollno. is '{roll_no}'";
             Console.WriteLine(name);
+        
+        }*/
+        public static void PrintArray(int[] a1)
+        {
+           foreach (int i in a1)
+            {
+                Console.WriteLine(i);
+            }
         }
         }
     }
