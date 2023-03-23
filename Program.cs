@@ -23,6 +23,7 @@ namespace application1
             /*
             application1.assignment1 obj2= new application1.assignment1();
             obj2.func1();*/
+
             //assignment2
             /*application1.assignment2 obj3= new application1.assignment2();
             obj3.asc();*/
@@ -34,8 +35,16 @@ namespace application1
            /* application1.stack_queue obj5= new application1.stack_queue();
             obj5.calling();*/
             //generic 
-            application1.generic obj6= new application1.generic();
-            obj6.call();
+            /*application1.generic obj6= new application1.generic();
+            obj6.call();*/
+            //linkedlist 
+            /*application1.LinkedList obj7= new application1.LinkedList(); ;
+            obj7.func1();
+            */
+            //exchanging letter
+            application1.exchange_letters obj8= new application1.exchange_letters();
+            obj8.func();
+
             /*
             //for loop and initialization
             Console.WriteLine("Hello Everyone");
