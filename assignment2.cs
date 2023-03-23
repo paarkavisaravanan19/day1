@@ -46,6 +46,7 @@ namespace application1
                 /* size of merged array is size of first array and  size of second array */
                 s3 = s1 + s2;
 
+
                 /*----------------- insert in the third array------------------------------------*/
                 for (i = 0; i < s1; i++)
                 {
